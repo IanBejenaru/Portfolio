@@ -4,10 +4,278 @@
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Base Vite Project Sass</title>
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
   </head>
   <body>
-    <h1>Proyecto Vite limpio</h1>
+    <div class="fondo-fijo"></div>
+
+    <header class="header">
+
+      <div class="header__container">
+
+        <div class="header__container-logotipo">
+          <img class="logotipo" src="img/logo-adamkeyes.svg" alt="Logotipo de adamkeyes">
+        </div>
+        
+
+        <div class="header__container-iconos-foto">
+          <div class="header__container-iconos-redes">
+            <img src="img/icono-github.svg" alt="">
+            <img src="img/icono-cara.svg" alt="">
+            <img src="img/icono-linkedin.svg" alt="">
+            <img src="img/icono-twit.svg" alt="">
+          </div>
+            
+          <picture>
+            <!-- Imagen para escritorio (desde 1024px en adelante) -->
+            <source media="(min-width: 1024px)" srcset="img/imagen-perfil-PC.png">
+            <!-- Imagen para tablet (desde 768px a 1023px) -->
+            <source media="(min-width: 768px)" srcset="img/imagen-perfil-tablet.png">
+            <!-- Imagen por defecto: mobile (menor a 768px) -->
+            <img class="img-perfil" src="img/imagen-perfil-mobile.png" alt="">
+          </picture>
+        </div>
+
+      </div>
+    </header>
+
+    <main class="hero">
+      <div class="hero__container">
+        <h1 class="hero__container-title">Nice to meet you! I’m <span>Adam Keyes.</span></h1>
+        <p class="hero__container-description">Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</p>
+        <a class="hero__container-btn" href="#">CONTACT ME</a>
+
+      </div>
+    </main>
+
+
+
+    <div class="contenedor-experiencia">
+      <div class="experiencia">
+        <article>
+          <h2>HTML</h2>
+          <h3>4 Years Experience</h3>
+        </article>
+
+        <article>
+          <h2>CSS</h2>
+          <h3>4 Years Experience</h3>
+        </article>
+
+        <article>
+          <h2>Javascript</h2>
+          <h3>4 Years Experience</h3>
+        </article>
+
+        <article>
+          <h2>Accessibility</h2>
+          <h3>4 Years Experience</h3>
+        </article>
+
+        <article>
+          <h2>React</h2>
+          <h3>3 Years Experience</h3>
+        </article>
+
+        <article>
+          <h2>Sass</h2>
+          <h3>3 Years Experience</h3>
+        </article>
+
+      </div>
+      
+      <div class="fondo-intermedio"></div>
+
+    </div>
+
+    <section class="projects">
+      <div class="hero__projects">
+        <h2 class="hero__projects-title">Projects</h2>
+        <a class="hero__projects-btn" href="#">CONTACT ME</a>
+      </div>
+
+      <div class="projects__container">
+
+        <article class="project__container">
+          <picture>
+            <!-- Imagen para escritorio (desde 1024px en adelante) -->
+            <source media="(min-width: 1024px)" srcset="img/imagen-design-portfolio-PC.png">
+            <!-- Imagen por defecto: mobile (menor a 768px) -->
+            <img class="project__container-img" src="img/imagen-design-portfolio-mobile.png" alt="">
+          </picture>
+          <h3 class="project__container-title">DESIGN PORTFOLIO</h3>
+          <div class="project__container-lenguaje">
+            <h4 class="project__container-lenguaje-programacion">HTML</h4>
+            <h4 class="project__container-lenguaje-programacion">CSS</h4>
+          </div>
+
+          <div class="project__container-ver">
+            <a class="project__container-ver-btn" href="#">VIEW PROJECT</a>
+            <a class="project__container-ver-btn" href="#">VIEW CODE</a>
+          </div>
+        </article>
+
+        <article class="project__container">
+          <picture>
+            <!-- Imagen para escritorio (desde 1024px en adelante) -->
+            <source media="(min-width: 1024px)" srcset="img/imagen-e-learning-PC.png">
+            <!-- Imagen por defecto: mobile (menor a 768px) -->
+            <img class="project__container-img" src="img/imagen-e-learning-mobile.png" alt="">
+          </picture>
+          <h3 class="project__container-title">E-LEARNING LANDING PAGE</h3>
+          <div class="project__container-lenguaje">
+            <h4 class="project__container-lenguaje-programacion">HTML</h4>
+            <h4 class="project__container-lenguaje-programacion">CSS</h4>
+          </div>
+
+          <div class="project__container-ver">
+            <a class="project__container-ver-btn" href="#">VIEW PROJECT</a>
+            <a class="project__container-ver-btn" href="#">VIEW CODE</a>
+          </div>
+        </article>
+
+        <article class="project__container">
+          <picture>
+            <!-- Imagen para escritorio (desde 1024px en adelante) -->
+            <source media="(min-width: 1024px)" srcset="img/imagen-todo-PC.png">
+            <!-- Imagen por defecto: mobile (menor a 768px) -->
+            <img class="project__container-img" src="img/imagen-todo-mobile.png" alt="">
+          </picture>
+          <h3 class="project__container-title">TODO WEB APP</h3>
+          <div class="project__container-lenguaje">
+            <h4 class="project__container-lenguaje-programacion">HTML</h4>
+            <h4 class="project__container-lenguaje-programacion">CSS</h4>
+            <h4 class="project__container-lenguaje-programacion">JAVASCRIPT</h4>
+          </div>
+
+          <div class="project__container-ver">
+            <a class="project__container-ver-btn" href="#">VIEW PROJECT</a>
+            <a class="project__container-ver-btn" href="#">VIEW CODE</a>
+          </div>
+        </article>
+
+        <article class="project__container">
+          <picture>
+            <!-- Imagen para escritorio (desde 1024px en adelante) -->
+            <source media="(min-width: 1024px)" srcset="img/imagen-entertainment-PC.png">
+            <!-- Imagen por defecto: mobile (menor a 768px) -->
+            <img class="project__container-img" src="img/imagen-entertainment-mobile.png" alt="">
+          </picture>
+          <h3 class="project__container-title">ENTERTAIMENT WEB APP</h3>
+          <div class="project__container-lenguaje">
+            <h4 class="project__container-lenguaje-programacion">HTML</h4>
+            <h4 class="project__container-lenguaje-programacion">CSS</h4>
+            <h4 class="project__container-lenguaje-programacion">JAVASCRIPT</h4>
+          </div>
+
+          <div class="project__container-ver">
+            <a class="project__container-ver-btn" href="#">VIEW PROJECT</a>
+            <a class="project__container-ver-btn" href="#">VIEW CODE</a>
+          </div>
+        </article>
+
+        <article class="project__container">
+          <picture>
+            <!-- Imagen para escritorio (desde 1024px en adelante) -->
+            <source media="(min-width: 1024px)" srcset="img/imagen-memory-PC.png">
+            <!-- Imagen por defecto: mobile (menor a 768px) -->
+            <img class="project__container-img" src="img/imagen-memory-mobile.png" alt="">
+          </picture>
+          <h3 class="project__container-title">MEMORY GAME</h3>
+          <div class="project__container-lenguaje">
+            <h4 class="project__container-lenguaje-programacion">HTML</h4>
+            <h4 class="project__container-lenguaje-programacion">CSS</h4>
+            <h4 class="project__container-lenguaje-programacion">JAVASCRIPT</h4>
+          </div>
+
+          <div class="project__container-ver">
+            <a class="project__container-ver-btn" href="#">VIEW PROJECT</a>
+            <a class="project__container-ver-btn" href="#">VIEW CODE</a>
+          </div>
+        </article>
+
+        <article class="project__container">
+          <picture>
+            <!-- Imagen para escritorio (desde 1024px en adelante) -->
+            <source media="(min-width: 1024px)" srcset="img/imagen-art-gallery-PC.png">
+            <!-- Imagen por defecto: mobile (menor a 768px) -->
+            <img class="project__container-img" src="img/imagen-art-gallery-mobile.png" alt="">
+          </picture>
+          <h3 class="project__container-title">ART GALLERY SHOWCASE</h3>
+          <div class="project__container-lenguaje">
+            <h4 class="project__container-lenguaje-programacion">HTML</h4>
+            <h4 class="project__container-lenguaje-programacion">CSS</h4>
+            <h4 class="project__container-lenguaje-programacion">JAVASCRIPT</h4>
+          </div>
+
+          <div class="project__container-ver">
+            <a class="project__container-ver-btn" href="#">VIEW PROJECT</a>
+            <a class="project__container-ver-btn" href="#">VIEW CODE</a>
+          </div>
+        </article>
+
+      </div>
+
+
+    </section>
+
+    <footer class="footer">
+
+
+      <h2 class="footer__title">Contact</h2>
+      <p class="footer__description">I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
+
+
+      <form class="footer__form" action="#" method="post">
+        <label for="nombre"></label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="NAME" required><br><br>
+
+        <label for="email"></label><br>
+        <input type="email" id="email" name="email" placeholder="EMAIL" required><br><br>
+
+        <label for="mensaje"></label><br>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="MESSAGE" required></textarea><br><br>
+
+        <button type="submit">SEND MESSAGE</button>
+      </form>
+
+      <div class="footer__redes">
+        <div class="footer__redes-logotipo">
+          <img class="logotipo" src="img/logo-adamkeyes.svg" alt="Logotipo de adamkeyes">
+        </div>
+        
+        <div class="footer__redes-iconos-redes">
+          <img src="img/icono-github.svg" alt="">
+          <img src="img/icono-cara.svg" alt="">
+          <img src="img/icono-linkedin.svg" alt="">
+          <img src="img/icono-twit.svg" alt="">
+        </div>
+      </div>
+      <div class="fondo-final"></div>
+
+
+
+
+
+    </footer>
+
+
+        
+    
+ 
+
+
+
+
+
+
+
+
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

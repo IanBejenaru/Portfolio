@@ -1,3 +1,6 @@
+@use "_variables" as *;
+
+
 @mixin breakpoint($point) {
   @if $point == largedesktop {
     @media (max-width: 1920px) and (min-width: 1441px) {
@@ -36,5 +39,15 @@
     @media (max-height: 550px) and (min-height: 0) {
       @content;
     }
+  }
+}
+
+@mixin boton() {
+  text-decoration: none;
+  border-bottom: 4px solid $color-green;
+  padding-bottom: 10px;
+
+  &:hover {
+    color: $color-green;
   }
 }

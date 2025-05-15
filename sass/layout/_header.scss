@@ -1,0 +1,44 @@
+
+@use "../abstracts/abstracts" as *;
+// Para mobile:
+.header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    &__container {
+        margin-top: 20px;
+
+        &-logotipo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .logotipo {
+                display: inline-block;
+            
+            }
+        }
+
+        &-iconos-foto {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        &-iconos-redes {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 49px;
+            img {
+                &:hover {
+                    filter: invert(77%) sepia(57%) saturate(535%) hue-rotate(108deg) brightness(91%) contrast(93%);
+                }
+            }
+            
+        }
+
+    }
+}

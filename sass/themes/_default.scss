@@ -1,9 +1,11 @@
 @use "../abstracts/abstracts" as *;
 
 html * {
-  font-family: $roboto-font;
+  font-family: $primary-font;
+  color:$color-white;
 }
 
 body {
   overflow-x: hidden;
+  background-color: $color-black;
 }

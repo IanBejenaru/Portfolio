@@ -1,0 +1,31 @@
+
+@use "../abstracts/abstracts" as *;
+
+.experiencia {
+    display: flex;
+    flex-direction: column;
+    border-top: 3px solid $color-grey-light;
+    border-bottom: 3px solid $color-grey-light;
+    padding: 16px 0 ;
+    margin-bottom: 80px;
+
+    article {
+        margin: 24px 0;
+        
+        h2 {
+            font-size: 35px;
+        }
+
+        h3 {
+            color: $color-grey-light;
+            font-size: 16px;
+        }
+    }
+
+}
+
+.contenedor-experiencia {
+    
+    margin: 0 16px;
+
+}

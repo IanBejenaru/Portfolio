@@ -1,0 +1,103 @@
+
+@use "../abstracts/abstracts" as *;
+
+.footer {
+    background-color: $color-grey-black;
+    padding: 0 16px;
+    &__title {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    &__description {
+        color: $color-grey-light;
+        margin-bottom: 50px;
+        font-size: 16px;
+    }
+
+    &__form {
+        position: relative;
+        border-bottom: 3px solid $color-grey-light;
+
+        label {
+            text-align: right;
+        }
+
+        input {
+            background-color: $color-grey-black;
+            border: 0;
+            border-bottom: 3px solid $color-grey-light;
+            width: 100%;
+            padding-left: 10px;
+            padding-bottom: 16px;
+            font-weight: 500;
+
+            &:valid {
+                border-bottom: 3px solid $color-green;
+            }
+            &:invalid {
+                border-bottom: 3px solid $color-red;
+            }
+        }
+
+        textarea {
+            background-color: $color-grey-black;
+            border: 0;
+            border-bottom: 3px solid $color-grey-light;
+            width: 100%;
+            margin-bottom: 157px;
+            padding-left: 10px;
+            padding-bottom: 16px;
+            font-weight: 500;
+
+        }
+
+        button {
+            margin-bottom: 87px;
+            text-align: left;
+            align-items: left;
+
+            text-decoration: none;
+            border: 0;
+            border-bottom: 4px solid $color-green;
+            padding-bottom: 10px;
+            background-color: $color-grey-black;
+            font-size: 18px;
+            letter-spacing: 0.1em;
+
+            position: absolute;
+            bottom: 30px;
+            right: 0;
+
+            &:hover {
+                color: $color-green;
+            }
+            
+        }
+
+    }
+
+    &__redes {
+        display: flex;
+        flex-direction: column;
+        margin-top: 39px;
+        padding-bottom: 60px;
+        
+        &-logotipo {
+            margin-bottom: 20px;
+        }
+
+        &-iconos-redes {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-bottom: 49px;
+
+            img {
+                &:hover {
+                    filter: invert(77%) sepia(57%) saturate(535%) hue-rotate(108deg) brightness(91%) contrast(93%);
+                }
+            }
+        }
+    }
+}
