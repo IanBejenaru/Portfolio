@@ -64,3 +64,162 @@
 
     }
 }
+
+// para tablet
+@include breakpoint(tablet) { 
+    .projects {
+        margin: 0 30px;
+        .hero__projects {
+            margin-bottom: 60px;
+
+            &-title {
+                font-size: 55px;
+            }
+
+            &-btn {
+                font-size: 18px;
+            }
+        }
+
+        &__container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px 20px;
+
+            .project__container{
+                flex: 0 0 calc(50% - 10px); // ← 50% menos la mitad del gap horizontal
+                box-sizing: border-box;
+            }
+            
+            .project__container-title {
+                font-size:27px;
+            }
+
+            .project__container-img {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+
+//Para PC
+@include breakpoint(desktop) {
+    .projects {
+        margin: 0 165px;
+        .hero__projects {
+            margin-bottom: 60px;
+
+            &-title {
+                font-size: 55px;
+            }
+
+            &-btn {
+                font-size: 18px;
+            }
+        }
+
+        &__container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 20px;
+
+            .project__container{
+                flex: 0 0 calc(50% - 10px); // ← 50% menos la mitad del gap horizontal
+                box-sizing: border-box;
+
+                position: relative;
+
+                &-ver {
+                    display: none;
+                    position: absolute;
+                    bottom: 100px;
+                    width: 420px;
+                    height: 280px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: rgba(0, 0, 0, 0.7);
+                    padding: 15%;
+                    border-radius: 5px;
+                }
+
+                &:hover .project__container-ver {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    justify-content: center;
+                }
+            }
+            
+            .project__container-title {
+                font-size:27px;
+            }
+
+            .project__container-img {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }    
+}
+
+//Para Pantallas muy grandes
+@include breakpoint(largedesktop) {
+    .projects {
+        margin: 0 165px;
+        .hero__projects {
+            margin-bottom: 60px;
+
+            &-title {
+                font-size: 55px;
+            }
+
+            &-btn {
+                font-size: 18px;
+            }
+        }
+
+        &__container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 20px;
+
+            .project__container{
+                flex: 0 0 calc(50% - 10px); // ← 50% menos la mitad del gap horizontal
+                box-sizing: border-box;
+
+                position: relative;
+
+                &-ver {
+                    display: none;
+                    position: absolute;
+                    bottom: 100px;
+                    width: 420px;
+                    height: 280px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: rgba(0, 0, 0, 0.7);
+                    padding: 15%;
+                    border-radius: 5px;
+                }
+
+                &:hover .project__container-ver {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    justify-content: center;
+                }
+            }
+            
+            .project__container-title {
+                font-size:27px;
+            }
+
+            .project__container-img {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }    
+}

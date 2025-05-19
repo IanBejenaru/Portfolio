@@ -7,16 +7,6 @@
 @use "vendors/vendors";
 
 
-//body {
-  // background-image: url('../img/imagen-fondo.png');
-  // background-repeat: no-repeat;
-  // background-size: 200px;              // O cover, según lo que necesites
-  // background-attachment: fixed;          // 🔒 Fija la imagen al viewport (no se mueve al hacer scroll)
-  // background-position: 0 111px;      // 🎯 Ajusta a la posición que desees (X Y)
-  // margin: 0;
-  // height: 100vh;
-//}
-
 body {
   text-align: center; // Para alinear todo al centro
 }
@@ -34,7 +24,7 @@ body {
     url('../img/imagen-fondo.png'),
     url('../img/imagen-circulo.png');
   background-repeat: no-repeat, no-repeat;
-  background-size: 200px, 70px, 200px;
+  background-size: 200px, 70px;
   background-position: 0 111px, right 240px;
 }
 
@@ -68,7 +58,6 @@ body {
   }
 }
 
-
 .fondo-intermedio {
   position: absolute;
   top: 917px;
@@ -99,3 +88,162 @@ body {
   background-position: left 473px;
   margin-left: -16px;
 }
+
+
+
+//Para tablet:     
+@include breakpoint(tablet) {
+  .hero {
+    margin-left: 30px; // Alinea con logotipo
+    margin-top: 20px;  // Separación visual
+    max-width: 600px;  // Opcional para limitar ancho
+    padding: 0;
+    z-index: 2;
+    position: relative; 
+
+    text-align: left;
+
+    &__container {
+
+      &-title {
+        width: 80%;
+        font-size: 70px;
+        margin-bottom: 60px ;
+        //letter-spacing: 1px;
+      }
+
+      &-description {
+        width: 73%;
+        font-size: 18px;
+        margin-bottom: 34px;
+      }
+    }
+  }
+
+  .fondo-fijo {
+    background-position: 0 66px, right 457px;
+  }
+
+  .fondo-intermedio {
+    background-position: right 200px;
+  }
+
+  .fondo-final {
+    top: 3200px;
+    background-position: left 320px;
+  }
+
+}
+
+//Para PC
+@include breakpoint(desktop) {
+  .hero {
+    margin-left: 165px; // Alinea con logotipo
+    margin-top: 80px;  // Separación visual
+    max-width: 600px;  // Opcional para limitar ancho
+    padding: 0;
+    z-index: 2;
+    position: relative; 
+    text-align: left;
+
+    &__container {
+       margin-bottom: 219px;
+
+      &-title {
+        width: 100%;
+        font-size: 70px;
+        margin-bottom: 43px ;
+      }
+
+      &-description {
+        width: 61%;
+        font-size: 18px;
+        margin-bottom: 34px;
+      }
+      
+    }
+  }
+
+  .fondo-fijo {
+    background-image: 
+      url('../img/imagen-fondo-izquierdo-PC.png'),
+      url('../img/imagen-circulo-PC.png');
+    
+    background-size: 380px, 100px;
+    background-position: 0 140px, 380px 525px;
+  }
+
+  .fondo-intermedio {
+    background-image: 
+      url('../img/imagen-fondo-derecho-intermedio-PC.png');
+    
+    background-size: 215px;
+    background-position: right 130px;
+  }
+
+  .fondo-final {
+    background-image: 
+      url('../img/imagen-fondo-izquierdo-final-PC.png');
+    
+    background-size: 215px;
+    top: 2890px;
+    background-position: left 320px;
+  }
+}
+
+//Para Pantallas muy grandes
+@include breakpoint(largedesktop) {
+  .hero {
+    margin-left: 165px; // Alinea con logotipo
+    margin-top: 80px;  // Separación visual
+    max-width: 600px;  // Opcional para limitar ancho
+    padding: 0;
+    z-index: 2;
+    position: relative; 
+    text-align: left;
+
+    &__container {
+       margin-bottom: 219px;
+
+      &-title {
+        width: 100%;
+        font-size: 70px;
+        margin-bottom: 43px ;
+      }
+
+      &-description {
+        width: 61%;
+        font-size: 18px;
+        margin-bottom: 34px;
+      }
+      
+    }
+  }
+
+  .fondo-fijo {
+    background-image: 
+      url('../img/imagen-fondo-izquierdo-PC.png'),
+      url('../img/imagen-circulo-PC.png');
+    
+    background-size: 380px, 100px;
+    background-position: 0 140px, 380px 525px;
+  }
+
+  .fondo-intermedio {
+    background-image: 
+      url('../img/imagen-fondo-derecho-intermedio-PC.png');
+    
+    background-size: 215px;
+    background-position: right 130px;
+  }
+
+  .fondo-final {
+    background-image: 
+      url('../img/imagen-fondo-izquierdo-final-PC.png');
+    
+    background-size: 215px;
+    top: 2890px;
+    background-position: left 320px;
+  }
+}
+

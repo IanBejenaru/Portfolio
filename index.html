@@ -103,7 +103,7 @@
         <article class="project__container">
           <picture>
             <!-- Imagen para escritorio (desde 1024px en adelante) -->
-            <source media="(min-width: 1024px)" srcset="img/imagen-design-portfolio-PC.png">
+            <source media="(min-width: 1024px)" srcset="img/imagen-design-portfolio-PC.jpg">
             <!-- Imagen por defecto: mobile (menor a 768px) -->
             <img class="project__container-img" src="img/imagen-design-portfolio-mobile.png" alt="">
           </picture>
@@ -225,23 +225,27 @@
 
     <footer class="footer">
 
+      <div class="form__container">
+        <div class="form__container-primero">
+          <h2 class="footer__title">Contact</h2>
+          <p class="footer__description">I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
 
-      <h2 class="footer__title">Contact</h2>
-      <p class="footer__description">I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
+        </div>
 
+        <form class="footer__form" action="#" method="post">
+          <label for="nombre"></label><br>
+          <input type="text" id="nombre" name="nombre" placeholder="NAME" required><br><br>
 
-      <form class="footer__form" action="#" method="post">
-        <label for="nombre"></label><br>
-        <input type="text" id="nombre" name="nombre" placeholder="NAME" required><br><br>
+          <label for="email"></label><br>
+          <input type="email" id="email" name="email" placeholder="EMAIL" required><br><br>
 
-        <label for="email"></label><br>
-        <input type="email" id="email" name="email" placeholder="EMAIL" required><br><br>
+          <label for="mensaje"></label><br>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="MESSAGE" required></textarea><br><br>
 
-        <label for="mensaje"></label><br>
-        <textarea id="mensaje" name="mensaje" rows="5" placeholder="MESSAGE" required></textarea><br><br>
+          <button type="submit">SEND MESSAGE</button>
+        </form>
 
-        <button type="submit">SEND MESSAGE</button>
-      </form>
+      </div>
 
       <div class="footer__redes">
         <div class="footer__redes-logotipo">

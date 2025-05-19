@@ -101,3 +101,160 @@
         }
     }
 }
+
+
+// para tablet
+@include breakpoint(tablet) { 
+    .footer {
+        //padding: 60px 161px;
+
+        &__title {
+            font-size: 55px;
+            padding: 60px 161px 0 161px;
+            
+        }
+
+        &__description {
+            color: $color-grey-light;
+            margin-bottom: 50px;
+            font-size: 18px;
+            padding: 0 161px;
+        }
+
+        &__form {
+            border-bottom: 0;
+            padding: 0 161px;
+            
+            button {
+                bottom: -15px;
+                right: 160px;
+
+            }
+        }
+        
+        &__redes {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            gap: 344px;
+            margin-bottom: 0;
+            padding-top: 30px;
+            //margin: -50px;
+            border-top: 3px solid $color-grey-light;
+        }
+    }
+}
+
+
+//Para PC
+@include breakpoint(desktop) { 
+
+    .form__container {
+        display: flex;
+        justify-content: space-between;
+
+        &-primero {
+            width: 50%;
+        }
+    }    
+
+    .footer {
+        text-align: left;
+
+        &__title {
+            font-size: 55px;
+            padding: 60px 0 0 161px;
+            
+        }
+
+        &__description {
+            color: $color-grey-light;
+            margin-bottom: 50px;
+            font-size: 18px;
+            padding: 0 0 0 161px;
+            width: 95%;
+        }
+
+        &__form {
+            border-bottom: 0;
+            padding: 0;
+            padding-right: 165px;
+            padding-top: 50px;
+            width: 45%;
+            button {
+                bottom: -15px;
+                right: 160px;
+
+            }
+        }
+        
+        &__redes {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            gap: 344px;
+            margin-bottom: 0;
+            margin-left: 165px;
+            margin-right: 165px;
+            padding-top: 30px;
+            border-top: 3px solid $color-grey-light;
+        }
+    }
+}
+
+
+//Para Pantallas muy grandes
+@include breakpoint(largedesktop) { 
+
+    .form__container {
+        display: flex;
+        justify-content: space-between;
+
+        &-primero {
+            width: 50%;
+        }
+    }    
+
+    .footer {
+        text-align: left;
+
+        &__title {
+            font-size: 55px;
+            padding: 60px 0 0 161px;
+            
+        }
+
+        &__description {
+            color: $color-grey-light;
+            margin-bottom: 50px;
+            font-size: 18px;
+            padding: 0 0 0 161px;
+            width: 95%;
+        }
+
+        &__form {
+            border-bottom: 0;
+            padding: 0;
+            padding-right: 165px;
+            padding-top: 50px;
+            width: 45%;
+            button {
+                bottom: -15px;
+                right: 160px;
+
+            }
+        }
+        
+        &__redes {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            gap: 344px;
+            margin-bottom: 0;
+            margin-left: 165px;
+            margin-right: 165px;
+            padding-top: 30px;
+            border-top: 3px solid $color-grey-light;
+        }
+    }
+}

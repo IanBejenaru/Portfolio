@@ -3,3 +3,14 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   base: '/GathSession/', // Usa el nombre del repo
 });
+
+
+//volver a la configuracion inicial: import { defineConfig } from 'vite'
+
+export default defineConfig({
+  server: {
+    watch: {
+      usePolling: true
+    }
+  }
+})
